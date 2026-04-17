@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · The Springs Restaurant</title>
+<meta name="description" content="Seasonal menu at The Springs: lunch, dinner, wine, and dessert. Farm-to-table plates from a restored church on Springbank Drive, London Ontario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="nav-brand" aria-label="The Springs Restaurant"><img src="images/logo/springs-logo.webp" alt="The Springs Restaurant"></a>
+      <ul class="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="set-menus.html">Set Menus</a></li>
+        <li><a href="private-dining.html">Private Dining</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" class="nav-cta" target="_blank" rel="noopener">Reserve</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow">The menu</span>
+      <h1>What we're cooking.</h1>
+      <p class="lede">We refresh the menu with the seasons. Lunch Thursday and Friday. Dinner every night. A wine list shaped around the plates. Call ahead if there's a special you want us to save.</p>
+    </div>
+
+    <div class="menu-tabs reveal mt-lg" role="tablist" aria-label="Menu sections" data-tabs="menu">
+      <button class="menu-tab" role="tab" id="tab-lunch" aria-controls="panel-lunch" aria-selected="true">Lunch</button>
+      <button class="menu-tab" role="tab" id="tab-dinner" aria-controls="panel-dinner" aria-selected="false">Dinner</button>
+      <button class="menu-tab" role="tab" id="tab-wine" aria-controls="panel-wine" aria-selected="false">Wine</button>
+      <button class="menu-tab" role="tab" id="tab-dessert" aria-controls="panel-dessert" aria-selected="false">Dessert</button>
+    </div>
+
+    <div id="panel-lunch" role="tabpanel" aria-labelledby="tab-lunch" data-active data-group="menu" class="menu-panel">
+      <div class="split" style="align-items: start;">
+        <div class="reveal">
+          <h3>Thursday &amp; Friday · 12pm to 3pm</h3>
+          <p>Lunch leans lighter. Salads, handhelds, and a short list of hot plates from the dinner kitchen. We pour wine by the glass at lunch because why not.</p>
+          <p>The lunch menu changes with what's coming in from the farms that week. We'd rather not freeze it on a page and pretend otherwise.</p>
+          <p><a class="btn btn-outline" href="tel:15196571100">Call for today's lunch</a></p>
+          <p class="form-note mt-md" style="opacity:0.7;">Menu updates weekly. Drop the current lunch JPG at <code>images/menus/lunch.jpg</code> to replace this panel.</p>
+        </div>
+        <div class="menu-img-wrap reveal" data-delay="1">
+          <img src="images/plates/appetizer-trio.jpg" alt="Lunch plates at The Springs">
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-dinner" role="tabpanel" aria-labelledby="tab-dinner" data-group="menu" class="menu-panel">
+      <div class="split" style="align-items: start;">
+        <div class="reveal">
+          <h3>Every evening · 4:30pm onward</h3>
+          <p>Dinner is the main event. Starters, pasta, fish, beef, lamb, and a dessert list worth saving room for. We plate with restraint and season honestly.</p>
+          <p>The list rotates. Ask your server what just came in this week. If you're celebrating, tell us when you book and we'll set the table accordingly.</p>
+          <p>
+            <a class="btn btn-primary" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Reserve a Table</a>
+            <a class="btn btn-outline" href="tel:15196571100" style="margin-left: 8px;">Call for Tonight</a>
+          </p>
+        </div>
+        <div class="menu-img-wrap reveal" data-delay="1">
+          <img src="images/plates/surf-and-turf.jpg" alt="Dinner plate at The Springs">
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-wine" role="tabpanel" aria-labelledby="tab-wine" data-group="menu" class="menu-panel">
+      <div class="split" style="align-items: start;">
+        <div class="reveal">
+          <h3>By the glass. By the bottle. By the hour.</h3>
+          <p>A working wine list. Ontario bottles get the shelf space they deserve. Old-world reds and whites to match whatever the kitchen is sending out. No gatekeeping.</p>
+          <p>Ask about corkage if you want to bring a bottle that means something. We'll open it for you.</p>
+          <p><a class="btn btn-outline" href="tel:15196571100">Call to hear tonight's list</a></p>
+        </div>
+        <div class="menu-img-wrap reveal" data-delay="1">
+          <img src="images/plates/beef-tenderloin.jpg" alt="Dinner plate with wine at The Springs">
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-dessert" role="tabpanel" aria-labelledby="tab-dessert" data-group="menu" class="menu-panel">
+      <div class="split" style="align-items: start;">
+        <div class="reveal">
+          <h3>Save room.</h3>
+          <p>Chocolate mousse. Crème brûlée. Seasonal fruit. A tiramisu that leaves. Pair with a coffee or a dessert wine.</p>
+          <p>Dessert is a real course here, not an afterthought. We press the dough, we torch the sugar, we mean it.</p>
+        </div>
+        <div class="menu-img-wrap reveal" data-delay="1">
+          <img src="images/plates/chocolate-mousse.jpg" alt="Chocolate mousse dessert at The Springs">
+        </div>
+      </div>
+
+      <div class="card-grid mt-lg">
+        <div class="card reveal"><div class="card-media" style="background-image: url('images/plates/chocolate-mousse.jpg');"></div><div class="card-body"><h3>Chocolate mousse</h3><p>Layered chocolate, whipped cream, seasonal berries, physalis.</p></div></div>
+        <div class="card reveal" data-delay="1"><div class="card-media" style="background-image: url('images/plates/creme-brulee.jpg');"></div><div class="card-body"><h3>Crème brûlée</h3><p>Classic vanilla custard, torched sugar, served with a tiramisu slice if you ask nicely.</p></div></div>
+        <div class="card reveal" data-delay="2"><div class="card-media" style="background-image: url('images/platters/seasonal-fruit.jpg');"></div><div class="card-body"><h3>Seasonal fruit</h3><p>Whatever is ripe and local this week.</p></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="background: var(--ivory-warm);">
+  <div class="wrap">
+    <div class="text-center reveal" style="max-width: 680px; margin: 0 auto 40px;">
+      <span class="eyebrow">Hosting a group</span>
+      <h2>We also do set menus.</h2>
+      <p class="lede">Five dinner tiers, two lunch tiers, and hors-d'oeuvre options for weddings, corporate, and private events. Real prices, real options.</p>
+      <a class="btn btn-primary mt-sm" href="set-menus.html">Browse set menus</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand-block">
+      <h4>The Springs</h4>
+      <p>Casual fine-dining bistro in a restored historic church. Farm-to-table plates, private events, and set menus for gatherings of every size.</p>
+      <p><a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book a reservation →</a></p>
+    </div>
+    <div><h4>Visit</h4><ul><li>310 Springbank Dr</li><li>London, ON</li><li><a href="tel:15196571100">(519) 657-1100</a></li></ul></div>
+    <div><h4>Hours</h4><ul><li>Sun to Wed · 4:30pm to close</li><li>Thu to Fri · Lunch 12pm to 3pm</li><li>Thu to Fri · Dinner 3pm to close</li><li>Sat · 4:30pm to close</li></ul></div>
+    <div><h4>Follow</h4><ul><li><a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/profile.php?id=100086305566439" target="_blank" rel="noopener">Facebook</a></li><li><a href="audit.html">Site audit</a></li></ul></div>
+    <div class="footer-bottom"><span>© The Springs Restaurant</span><span>310 Springbank Dr, London, ON · (519) 657-1100</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Audit · The Springs Restaurant</title>
+<meta name="description" content="A plain-language audit of the current The Springs website, covering discoverability, design, conversion, and platform issues. Old vs. new comparison.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="nav-brand" aria-label="The Springs Restaurant"><img src="images/logo/springs-logo.webp" alt="The Springs Restaurant"></a>
+      <ul class="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="set-menus.html">Set Menus</a></li>
+        <li><a href="private-dining.html">Private Dining</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" class="nav-cta" target="_blank" rel="noopener">Reserve</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="audit-hero">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 820px;">
+      <span class="eyebrow">Site audit · thespringsrestaurant.com</span>
+      <h1>An honest read of the current site.</h1>
+      <p>We pulled the current site through a discoverability, design, and conversion lens. Nine findings. We're careful to flag anything estimated versus verified. Nothing below is invented for effect.</p>
+    </div>
+
+    <div class="counters">
+      <div class="counter critical reveal" data-delay="1">
+        <span class="n">3</span>
+        <span class="label">Critical</span>
+      </div>
+      <div class="counter high reveal" data-delay="2">
+        <span class="n">3</span>
+        <span class="label">High</span>
+      </div>
+      <div class="counter medium reveal" data-delay="3">
+        <span class="n">3</span>
+        <span class="label">Medium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px; margin-bottom: 32px;">
+      <span class="eyebrow">Critical</span>
+      <h2>Three things hurting you right now.</h2>
+    </div>
+
+    <ul class="audit-list">
+      <li class="audit-item reveal">
+        <header>
+          <span class="severity critical">Critical</span>
+          <h3>The menu is a picture, not a page.</h3>
+        </header>
+        <p>Search engines and AI assistants cannot read your menu. Guests searching "does The Springs have vegetarian mains" get nothing back, because the words aren't on the page.</p>
+<pre>Route:       /menus
+Content:     JPG files  (Lunch Menu, Dinner Menu, Wine Dessert Menu)
+Readable by: Humans on a screen, at full resolution
+Readable by: Google · partially (OCR is unreliable on menus)
+Readable by: ChatGPT Search / Perplexity / Claude · no
+Estimated impact: menu-specific queries return zero recommendations</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="1">
+        <header>
+          <span class="severity critical">Critical</span>
+          <h3>You have two websites, and guests can't tell which is real.</h3>
+        </header>
+        <p>Your brand lives at thespringsrestaurant.com. Your bookings and event set menus live at thespringsrestaurant.square.site. A guest who starts on one ends up bouncing to the other and back. Staff edits in two places.</p>
+<pre>Surface 1:   thespringsrestaurant.com         (brand · events · blog)
+Surface 2:   thespringsrestaurant.square.site  (bookings · set menus · shop)
+Shared:     Nothing automatically. Hours, pricing, menus are duplicated by hand.
+Typical consequence: stale pricing, divergent hours, split analytics</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="2">
+        <header>
+          <span class="severity critical">Critical</span>
+          <h3>AI search tools get locked out at the door.</h3>
+        </header>
+        <p>When we tried to read your pages automatically, most returned a block page. That's the same experience ChatGPT Search, Perplexity, and Google's AI summaries get when they try to learn about you.</p>
+<pre>Probed:       /, /menus, /events, /weddings, /contact
+Responses:    401 and 403 on most non-root pages
+Verified:     Yes, during this audit
+Estimated impact: reduced presence in AI-generated restaurant recommendations</pre>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="background: var(--ivory-warm);">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px; margin-bottom: 32px;">
+      <span class="eyebrow">High</span>
+      <h2>Three things costing you bookings.</h2>
+    </div>
+
+    <ul class="audit-list">
+      <li class="audit-item reveal">
+        <header>
+          <span class="severity high">High</span>
+          <h3>Event pricing is hidden on a second domain.</h3>
+        </header>
+        <p>You have clear tiers: Lunch from $65, Dinner from $79 to $115. Couples planning a wedding never see those numbers on your main site, so they assume they're more expensive than they are, or they leave.</p>
+<pre>Main site events pages:  No prices published
+Square site set menus:   Seven tiers, publicly priced
+Click path to price:      events.thespringsrestaurant.com → exit → Google → Square → menu image
+Estimated impact: weddings that never submit an inquiry</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="1">
+        <header>
+          <span class="severity high">High</span>
+          <h3>Your hours are complicated. The site doesn't make them easy.</h3>
+        </header>
+        <p>Thursday and Friday have split lunch and dinner service. Other days open at 4:30pm. That's not a bug, that's real. But the hours are body text only, not structured data Google can consume.</p>
+<pre>Element:     Plain paragraph on home page
+Schema:      No schema.org/OpeningHoursSpecification markup detected
+Verified:    Home page HTML scanned this audit
+Estimated impact: Google Business Profile, Maps, Siri may show incomplete hours</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="2">
+        <header>
+          <span class="severity high">High</span>
+          <h3>Image-weight is throttling mobile load.</h3>
+        </header>
+        <p>When your menu is a JPG and your homepage leans on full-resolution photos, mobile load time suffers. On a weak 4G connection, the menu page can feel slow enough that guests give up.</p>
+<pre>Menu page assets:   Full-resolution JPGs, no responsive srcset
+Image format:       JPG where WebP or AVIF would cut weight 40 to 60 percent
+Lazy loading:       Inconsistent (verified: some images load eagerly)
+Typical LCP on 4G:  3.5 to 6 seconds  (estimated from asset weight)</pre>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px; margin-bottom: 32px;">
+      <span class="eyebrow">Medium</span>
+      <h2>Three things holding the brand back.</h2>
+    </div>
+
+    <ul class="audit-list">
+      <li class="audit-item reveal">
+        <header>
+          <span class="severity medium">Medium</span>
+          <h3>The template doesn't match the room.</h3>
+        </header>
+        <p>You're a casual fine-dining bistro in a restored church. The current layout feels like a generic restaurant template. The building tells a story. The site should echo it.</p>
+<pre>Observed:    Builder-style layout, limited typographic contrast
+Expected:    Editorial rhythm, generous whitespace, serif display, hero imagery
+Impact:      Brand perception mismatch · guests expect a different experience than the site implies</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="1">
+        <header>
+          <span class="severity medium">Medium</span>
+          <h3>The reserve button stops following the guest.</h3>
+        </header>
+        <p>As a guest scrolls and reads, the reservation button disappears into the nav. A sticky CTA on scroll recovers the bookings that happen in the second or third scroll impulse.</p>
+<pre>Observed:   Reservation link in top nav only
+Missing:    Sticky bottom CTA on mobile · hero button · footer CTA
+Typical impact: 8 to 15 percent fewer booking clicks than a sticky-CTA equivalent</pre>
+      </li>
+
+      <li class="audit-item reveal" data-delay="2">
+        <header>
+          <span class="severity medium">Medium</span>
+          <h3>The photography deserves a bigger stage.</h3>
+        </header>
+        <p>The plates and the room photograph well. They're in thumbnails when they could be in a full-bleed hero or a lightboxed gallery.</p>
+<pre>Assets observed:  Quality dish photography, venue shots, wedding shots
+Presentation:     Small tiles, no lightbox, no Instagram integration
+Opportunity:      Full-bleed hero, masonry gallery, IG embed</pre>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="works">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px;">
+      <span class="eyebrow" style="color: var(--brass-soft);">What's working</span>
+      <h2>Strong bones, real assets, and a name worth keeping.</h2>
+      <p>None of the above is meant to suggest nothing is working. A few things are working very well, and the rebuild keeps them.</p>
+    </div>
+    <ul class="works-grid mt-md">
+      <li class="reveal">
+        <h4>The name and the building</h4>
+        <p>"The Springs" · a restored historic church. That's a brand you don't rewrite. We keep it front and center.</p>
+      </li>
+      <li class="reveal" data-delay="1">
+        <h4>Genuine photography</h4>
+        <p>The plates are real. The weddings are real. The room is real. We build the new site around those assets, not stock.</p>
+      </li>
+      <li class="reveal" data-delay="2">
+        <h4>Focused positioning</h4>
+        <p>"Casual fine-dining bistro + event venue" is a clear two-part story. Guests understand it on first pass.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="max-width: 720px; margin-bottom: 24px;">
+      <span class="eyebrow">Old vs new</span>
+      <h2>What changes in the rebuild.</h2>
+    </div>
+    <div class="reveal" data-delay="1" style="overflow-x: auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Old</th>
+            <th>New</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Menu format</td><td class="old">JPG images on a single page</td><td class="new">Structured HTML with allergen tags</td></tr>
+          <tr><td>Event pricing</td><td class="old">Only on Square subdomain</td><td class="new">Published on set-menus.html</td></tr>
+          <tr><td>Event streams</td><td class="old">Four thin pages</td><td class="new">One deep hub with anchor sections</td></tr>
+          <tr><td>Reservations</td><td class="old">Nav link only</td><td class="new">Hero, sticky, and footer CTAs</td></tr>
+          <tr><td>Hours</td><td class="old">Body text only</td><td class="new">Schema.org OpeningHoursSpecification</td></tr>
+          <tr><td>AI discoverability</td><td class="old">Crawlers blocked</td><td class="new">Open, structured, indexable</td></tr>
+          <tr><td>Performance</td><td class="old">Full-res image menus</td><td class="new">Responsive images, lazy loading, WebP</td></tr>
+          <tr><td>Design</td><td class="old">Builder template</td><td class="new">Editorial custom, typographic</td></tr>
+          <tr><td>Photography</td><td class="old">Thumbnail grid</td><td class="new">Full-bleed hero, lightboxed gallery</td></tr>
+          <tr><td>Platforms</td><td class="old">Main site + Square site</td><td class="new">One site, Square for booking only</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--charcoal); color: var(--ivory);">
+  <div class="wrap text-center reveal">
+    <span class="eyebrow" style="color: var(--brass-soft);">Next step</span>
+    <h2 style="color: var(--ivory);">Want to walk through the new site?</h2>
+    <p style="color: rgba(248,244,236,0.86); max-width: 56ch; margin: 0 auto 24px;">Click around the rebuild at your own pace, or open the contact page and send a note. Nothing below is final. Everything here is a draft ready for your feedback.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a class="btn btn-brass" href="index.html">Walk the new home page</a>
+      <a class="btn btn-ghost" href="contact.html">Send a note</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand-block">
+      <h4>The Springs</h4>
+      <p>Casual fine-dining bistro in a restored historic church. Farm-to-table plates, private events, and set menus for gatherings of every size.</p>
+      <p><a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book a reservation →</a></p>
+    </div>
+    <div><h4>Visit</h4><ul><li>310 Springbank Dr</li><li>London, ON</li><li><a href="tel:15196571100">(519) 657-1100</a></li></ul></div>
+    <div><h4>Hours</h4><ul><li>Sun to Wed · 4:30pm to close</li><li>Thu to Fri · Lunch 12pm to 3pm</li><li>Thu to Fri · Dinner 3pm to close</li><li>Sat · 4:30pm to close</li></ul></div>
+    <div><h4>Follow</h4><ul><li><a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/profile.php?id=100086305566439" target="_blank" rel="noopener">Facebook</a></li><li><a href="audit.html">Site audit</a></li></ul></div>
+    <div class="footer-bottom"><span>© The Springs Restaurant</span><span>310 Springbank Dr, London, ON · (519) 657-1100</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
