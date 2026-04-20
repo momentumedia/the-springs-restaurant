@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Menu · The Springs Restaurant</title>
-<meta name="description" content="Seasonal menu at The Springs: lunch, dinner, wine, and dessert. Farm-to-table plates from a restored church on Springbank Drive, London Ontario.">
+<meta name="description" content="Lunch, dinner, cocktails, wine, spirits, and dessert at The Springs. Locally sourced and handpicked by proprietor. Restored historic church on Springbank Drive, London Ontario.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -24,6 +24,7 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="audit.html">Audit</a></li>
       </ul>
       <a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" class="nav-cta" target="_blank" rel="noopener">Reserve</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
@@ -37,80 +38,377 @@
   <div class="wrap">
     <div class="reveal" style="max-width: 720px;">
       <span class="eyebrow">The menu</span>
-      <h1>What we're cooking.</h1>
-      <p class="lede">We refresh the menu with the seasons. Lunch Thursday and Friday. Dinner every night. A wine list shaped around the plates. Call ahead if there's a special you want us to save.</p>
+      <h1>Locally sourced. Handpicked by proprietor.</h1>
+      <p class="lede">Lunch Thursday and Friday. Dinner every night. A full bar and a wine list shaped around the plates. Prices in CAD. Menu rotates with the season. Call ahead if there's a special you want us to save.</p>
     </div>
 
     <div class="menu-tabs reveal mt-lg" role="tablist" aria-label="Menu sections" data-tabs="menu">
       <button class="menu-tab" role="tab" id="tab-lunch" aria-controls="panel-lunch" aria-selected="true">Lunch</button>
       <button class="menu-tab" role="tab" id="tab-dinner" aria-controls="panel-dinner" aria-selected="false">Dinner</button>
-      <button class="menu-tab" role="tab" id="tab-wine" aria-controls="panel-wine" aria-selected="false">Wine</button>
-      <button class="menu-tab" role="tab" id="tab-dessert" aria-controls="panel-dessert" aria-selected="false">Dessert</button>
+      <button class="menu-tab" role="tab" id="tab-cocktails" aria-controls="panel-cocktails" aria-selected="false">Cocktails &amp; Beer</button>
+      <button class="menu-tab" role="tab" id="tab-winespirits" aria-controls="panel-winespirits" aria-selected="false">Wine &amp; Spirits</button>
+      <button class="menu-tab" role="tab" id="tab-dessert" aria-controls="panel-dessert" aria-selected="false">Dessert &amp; Digestifs</button>
+    </div>
+
+    <div class="menu-legend reveal">
+      <span class="pill">gf · gluten free</span>
+      <span class="pill">v · vegan</span>
+      <span class="pill">vg · vegetarian</span>
+      <span class="menu-note">Please inform your server of any dietary restrictions or allergies. We accommodate allergies but do not guarantee an allergen-free kitchen.</span>
     </div>
 
     <div id="panel-lunch" role="tabpanel" aria-labelledby="tab-lunch" data-active data-group="menu" class="menu-panel">
-      <div class="split" style="align-items: start;">
-        <div class="reveal">
-          <h3>Thursday &amp; Friday · 12pm to 3pm</h3>
-          <p>Lunch leans lighter. Salads, handhelds, and a short list of hot plates from the dinner kitchen. We pour wine by the glass at lunch because why not.</p>
-          <p>The lunch menu changes with what's coming in from the farms that week. We'd rather not freeze it on a page and pretend otherwise.</p>
-          <p><a class="btn btn-outline" href="tel:15196571100">Call for today's lunch</a></p>
-          <p class="form-note mt-md" style="opacity:0.7;">Menu updates weekly. Drop the current lunch JPG at <code>images/menus/lunch.jpg</code> to replace this panel.</p>
-        </div>
-        <div class="menu-img-wrap reveal" data-delay="1">
-          <img src="images/plates/appetizer-trio.jpg" alt="Lunch plates at The Springs">
-        </div>
+      <div class="menu-section-head reveal">
+        <h2>Lunch</h2>
+        <p>Thursday and Friday · 12pm to 3pm. Appetizers, salads, handhelds, and hot plates from the dinner kitchen. Wine by the glass, because why not.</p>
+      </div>
+
+      <h3 class="menu-subhead reveal">Appetizers</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Soup of the day</h4><span class="price">21</span></div>
+        <div class="menu-item"><h4>Seared 'ahi' tuna <span class="pill pill-inline">gf</span></h4><span class="price">31</span><p>Black and white sesame seed crusted yellowfin tuna loin, greens mix, wasabi aioli, citrus ginger, teriyaki sauce, pickled ginger.</p></div>
+        <div class="menu-item"><h4>Crab cakes</h4><span class="price">26</span><p>Panko breaded, back and claw crab meat, Thai chili lime aioli.</p></div>
+        <div class="menu-item"><h4>Sauteed escargots</h4><span class="price">34</span><p>Pancetta, tomatoes, white wine garlic cream sauce, fleuron, toast point.</p></div>
+        <div class="menu-item"><h4>Scallops</h4><span class="price">28</span><p>Pan seared, creamy blueberry bourbon sauce, toast point.</p></div>
+        <div class="menu-item"><h4>Arancini <span class="pill pill-inline">vg</span></h4><span class="price">24</span><p>Arborio rice, marinara sauce, feta, cream cheese, smoked mozzarella.</p></div>
+        <div class="menu-item"><h4>Tiger prawn</h4><span class="price">26</span><p>Jumbo tiger prawn, old cheddar, lemon, garlic and herb lobster cream sauce.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Salads</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Springs Roman salad</h4><span class="price">21</span><p>Caper berry, house roman dressing, bacon, croutons, parmesan.</p></div>
+        <div class="menu-item"><h4>Springs house greens</h4><span class="price">21</span><p>Greens mix, cherry tomato, pumpkin seeds, carrots, cucumbers, citrus pomegranate vinaigrette, goat cheese.</p><p class="menu-add"><strong>Add</strong> · shrimp 4pc +21 · chicken +21 · scallops 3pc +25 · salmon +25</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Entrées <span class="menu-subnote">Add an accompaniment of soup, salad, or fries +9</span></h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>French beef dip</h4><span class="price">26</span><p>Caramelized onions, old white cheddar, fresh Portuguese bun.</p></div>
+        <div class="menu-item"><h4>The Springs tenderloin burger</h4><span class="price">28</span><p>Garlic aioli, lettuce, tomato, red onion, old white cheddar, bacon.</p></div>
+        <div class="menu-item"><h4>Mushroom risotto <span class="pill pill-inline">vg</span></h4><span class="price">40</span><p>Green peas, shredded parmesan. <strong>Add</strong> shrimp 4pc +21 · chicken +21 · scallops 3pc +25 · salmon +25.</p></div>
+        <div class="menu-item"><h4>Salmon burger</h4><span class="price">24</span><p>Greens mix, cucumbers, carrots, wasabi aioli, ginger dressing, pickled ginger.</p></div>
+        <div class="menu-item"><h4>Turkey wrap</h4><span class="price">25</span><p>Dried cranberries, greens, cheddar cheese, mixed mayo, green apples, onion.</p></div>
+        <div class="menu-item"><h4>Teriyaki penne</h4><span class="price">41</span><p>Your choice of sauteed shrimp, chicken, or veggies. Red peppers, caramelized red onions, mushrooms, spinach, teriyaki cream sauce.</p></div>
+        <div class="menu-item"><h4>Braised lamb shank <span class="pill pill-inline">gf</span></h4><span class="price">53</span><p>Garlic mashed potatoes, seasonal vegetables, porto au jus, sweety drops.</p></div>
+        <div class="menu-item"><h4>AAA Angus beef tenderloin <span class="pill pill-inline">gf</span></h4><span class="price">56</span><p>Potato pave, seasonal vegetables, bordelaise sauce, compound butter.</p></div>
+        <div class="menu-item"><h4>Haddock and chips</h4><span class="price">31</span><p>Coleslaw, tartar sauce.</p></div>
+        <div class="menu-item"><h4>Grilled Atlantic salmon <span class="pill pill-inline">gf</span></h4><span class="price">43</span><p>Creamy lemon orzo, fresh herbs, seasonal vegetables, creamy dill sauce.</p></div>
+        <div class="menu-item"><h4>Black pepper lamb burger</h4><span class="price">29</span><p>Lettuce, tomato, red onion, bacon, apple bourbon bbq sauce, goat cheese.</p></div>
+        <div class="menu-item"><h4>Breaded pork schnitzel</h4><span class="price">47</span><p>Roasted fingerling potatoes, seasonal vegetables, creamy dill sauce.</p></div>
       </div>
     </div>
 
     <div id="panel-dinner" role="tabpanel" aria-labelledby="tab-dinner" data-group="menu" class="menu-panel">
-      <div class="split" style="align-items: start;">
-        <div class="reveal">
-          <h3>Every evening · 4:30pm onward</h3>
-          <p>Dinner is the main event. Starters, pasta, fish, beef, lamb, and a dessert list worth saving room for. We plate with restraint and season honestly.</p>
-          <p>The list rotates. Ask your server what just came in this week. If you're celebrating, tell us when you book and we'll set the table accordingly.</p>
-          <p>
-            <a class="btn btn-primary" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Reserve a Table</a>
-            <a class="btn btn-outline" href="tel:15196571100" style="margin-left: 8px;">Call for Tonight</a>
-          </p>
+      <div class="menu-section-head reveal">
+        <h2>Dinner</h2>
+        <p>Every evening · 4:30pm onward. Starters, pasta, fish, beef, lamb, and a dessert list worth saving room for. Ask your server what just came in.</p>
+      </div>
+
+      <h3 class="menu-subhead reveal">Appetizers</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Soup of the day</h4><span class="price">21</span></div>
+        <div class="menu-item"><h4>Seared 'ahi' tuna <span class="pill pill-inline">gf</span></h4><span class="price">31</span><p>Black and white sesame seed crusted yellowfin tuna loin, greens mix, wasabi aioli, citrus ginger, teriyaki sauce, pickled ginger.</p></div>
+        <div class="menu-item"><h4>Crab cakes</h4><span class="price">26</span><p>Panko breaded, back and claw crab meat, Thai chili lime aioli.</p></div>
+        <div class="menu-item"><h4>Sauteed escargots</h4><span class="price">34</span><p>Pancetta, tomatoes, white wine garlic cream sauce, fleuron, toast point.</p></div>
+        <div class="menu-item"><h4>Scallops</h4><span class="price">28</span><p>Pan seared, blueberry bourbon cream sauce, toast point.</p></div>
+        <div class="menu-item"><h4>Arancini <span class="pill pill-inline">vg</span></h4><span class="price">24</span><p>Arborio rice, marinara sauce, feta, cream cheese, smoked mozzarella.</p></div>
+        <div class="menu-item"><h4>Tiger prawn</h4><span class="price">26</span><p>Jumbo tiger prawn, old cheddar, lemon, garlic and herb lobster cream sauce.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Salads</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Springs Roman salad <span class="pill pill-inline">gf</span> <span class="pill pill-inline">vg</span></h4><span class="price">21</span><p>Crisp romaine, house roman dressing, bacon, croutons, parmesan.</p></div>
+        <div class="menu-item"><h4>Springs house greens <span class="pill pill-inline">gf</span> <span class="pill pill-inline">v</span> <span class="pill pill-inline">vg</span></h4><span class="price">21</span><p>Greens mix, cherry tomatoes, pumpkin seeds, carrots, cucumbers, citrus pomegranate vinaigrette, goat cheese. <strong>Add</strong> shrimp 4pc +21 · chicken +21 · scallops 3pc +25 · salmon +25.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Entrées</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>AAA Angus beef tenderloin <span class="pill pill-inline">gf</span></h4><span class="price">56</span><p>Roasted potato pave, seasonal vegetables, bordelaise sauce, compound butter.</p></div>
+        <div class="menu-item"><h4>Breaded pork schnitzel</h4><span class="price">47</span><p>Roasted fingerling potatoes, seasonal vegetables, creamy dill sauce.</p></div>
+        <div class="menu-item"><h4>Mushroom risotto <span class="pill pill-inline">gf</span> <span class="pill pill-inline">vg</span></h4><span class="price">40</span><p>Green peas, mixed mushrooms, shredded parmesan, truffle oil. <strong>Add</strong> shrimp 4pc +21 · chicken +21 · scallops 3pc +25 · salmon +25.</p></div>
+        <div class="menu-item"><h4>Braised lamb shank <span class="pill pill-inline">gf</span></h4><span class="price">54</span><p>Garlic whipped potatoes, seasonal vegetables, porto au jus, sweety drops.</p></div>
+        <div class="menu-item"><h4>Chicken supreme roulade <span class="pill pill-inline">gf</span></h4><span class="price">48</span><p>Mushroom risotto, seasonal vegetables, duxelles, sauce vierge, balsamic reduction.</p></div>
+        <div class="menu-item"><h4>Teriyaki penne</h4><span class="price">41</span><p>Your choice of sauteed shrimp, chicken, or veggies. Red peppers, caramelized red onions, mushrooms, spinach, teriyaki cream sauce.</p></div>
+        <div class="menu-item"><h4>Seared duck breast</h4><span class="price">49</span><p>Roasted fingerling potatoes, bordelaise sauce, seasonal vegetables.</p></div>
+        <div class="menu-item"><h4>Grilled Atlantic salmon <span class="pill pill-inline">gf</span></h4><span class="price">46</span><p>Creamy lemon orzo, fresh herbs, seasonal vegetables, dill cream sauce.</p></div>
+        <div class="menu-item"><h4>Venison loin</h4><span class="price">56</span><p>Organic espresso and black pepper crusted, roasted fingerling potatoes, seasonal vegetables, lime, arugula, chocolate pomegranate gastrique.</p></div>
+      </div>
+    </div>
+
+    <div id="panel-cocktails" role="tabpanel" aria-labelledby="tab-cocktails" data-group="menu" class="menu-panel">
+      <div class="menu-section-head reveal">
+        <h2>Cocktails &amp; Beer</h2>
+        <p>A proper bar. Classics poured straight, a few Springs originals, and bottled beer cold.</p>
+      </div>
+
+      <h3 class="menu-subhead reveal">Classic cocktails</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Negroni</h4><span class="price">21</span><p>Gin, sweet vermouth, Campari, orange.</p></div>
+        <div class="menu-item"><h4>Martini · top shelf martini</h4><span class="price">18 / 21</span><p>Gin or vodka, straight up or on the rocks, lemon twist or olives.</p></div>
+        <div class="menu-item"><h4>Cosmopolitan</h4><span class="price">19</span><p>Vodka, triple sec, fresh squeezed lime juice, cranberry.</p></div>
+        <div class="menu-item"><h4>Manhattan</h4><span class="price">20</span><p>Bourbon, sweet vermouth, angostura bitters, amarena cherries.</p></div>
+        <div class="menu-item"><h4>Margarita</h4><span class="price">18</span><p>Cherry or lime, tequila, triple sec, on the rocks, salt rim.</p></div>
+        <div class="menu-item"><h4>Aperol spritz</h4><span class="price">16</span><p>Aperol, prosecco, soda, orange.</p></div>
+        <div class="menu-item"><h4>Moscow mule</h4><span class="price">17</span><p>Vodka, simple syrup, fresh squeezed lime juice, ginger beer.</p></div>
+        <div class="menu-item"><h4>Sangria</h4><span class="price">17</span><p>Red or white wine, triple sec, cassis, fruit juices.</p></div>
+        <div class="menu-item"><h4>Caesar</h4><span class="price">18 · virgin 12</span><p>Vodka, worcestershire, tabasco, clamato, lime, smoked celery salt rim, olive.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Springs signatures</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Maple bourbon old fashioned</h4><span class="price">19</span><p>Bourbon, Dillon's orange bitters, maple syrup, sweet vermouth, orange, amarena cherries.</p></div>
+        <div class="menu-item"><h4>Lavender Collins</h4><span class="price">18</span><p>Empress gin, house made lavender syrup, fresh squeezed lemon juice, soda.</p></div>
+        <div class="menu-item"><h4>Springtini</h4><span class="price">19</span><p>Raspberry and vanilla vodka, cassis, raspberry sourz, dehydrated lemon slice.</p></div>
+        <div class="menu-item"><h4>Pink lemonade martini</h4><span class="price">21</span><p>Vodka, limoncello, cassis, lemon.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Non alcoholic</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Cherry lime craft soda</h4><span class="price"></span><p>Cherry syrup, fresh squeezed lime juice, amarena cherry.</p></div>
+        <div class="menu-item"><h4>Sparkling lemonade</h4><span class="price"></span><p>Fresh squeezed lemon juice, simple syrup, dehydrated lemon slice.</p></div>
+        <div class="menu-item"><h4>Mock mule</h4><span class="price"></span><p>Fresh squeezed lime juice, simple syrup, ginger beer.</p></div>
+        <div class="menu-item"><h4>Budweiser Zero</h4><span class="price"></span></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Beer <span class="menu-subnote">bottles and cans</span></h3>
+      <div class="menu-columns reveal">
+        <div>
+          <h4 class="menu-minihead">Domestic</h4>
+          <ul class="menu-list">
+            <li><span>Budweiser</span><span>8.5</span></li>
+            <li><span>Bud Light</span><span>8.5</span></li>
+            <li><span>Michelob Ultra</span><span>8.5</span></li>
+          </ul>
         </div>
-        <div class="menu-img-wrap reveal" data-delay="1">
-          <img src="images/plates/surf-and-turf.jpg" alt="Dinner plate at The Springs">
+        <div>
+          <h4 class="menu-minihead">Imported</h4>
+          <ul class="menu-list">
+            <li><span>Heineken</span><span>9.5</span></li>
+            <li><span>Corona</span><span>9.5</span></li>
+            <li><span>Stella Artois</span><span>9.5</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="menu-minihead">Craft</h4>
+          <ul class="menu-list">
+            <li><span>Anderson IPA</span><span>9.5</span></li>
+            <li><span>Anderson Cream Ale</span><span>9.5</span></li>
+            <li><span>Shale Ridge Rose Cider</span><span>11</span></li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div id="panel-wine" role="tabpanel" aria-labelledby="tab-wine" data-group="menu" class="menu-panel">
-      <div class="split" style="align-items: start;">
-        <div class="reveal">
-          <h3>By the glass. By the bottle. By the hour.</h3>
-          <p>A working wine list. Ontario bottles get the shelf space they deserve. Old-world reds and whites to match whatever the kitchen is sending out. No gatekeeping.</p>
-          <p>Ask about corkage if you want to bring a bottle that means something. We'll open it for you.</p>
-          <p><a class="btn btn-outline" href="tel:15196571100">Call to hear tonight's list</a></p>
+    <div id="panel-winespirits" role="tabpanel" aria-labelledby="tab-winespirits" data-group="menu" class="menu-panel">
+      <div class="menu-section-head reveal">
+        <h2>Wine &amp; Spirits</h2>
+        <p>Ontario bottles get shelf space. Old-world reds and whites to match whatever the kitchen is sending out. Ask about corkage if you want to bring a bottle that means something.</p>
+      </div>
+
+      <h3 class="menu-subhead reveal">Red wine <span class="menu-subnote">bottle / 6oz glass / 9oz glass</span></h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>House Seasons Cabernet Merlot 2024</h4><span class="price">48 / 14 / 19</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Black River Malbec 2024</h4><span class="price">55 / 16 / 21</span><p>Argentina.</p></div>
+        <div class="menu-item"><h4>Kim Crawford Pinot Noir 2023</h4><span class="price">64 / 17 / 24</span><p>New Zealand.</p></div>
+        <div class="menu-item"><h4>Caposaldo Chianti 2023</h4><span class="price">64 / 17 / 24</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Pelee Island Baco Noir 2019</h4><span class="price">48</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Pelee Island Shiraz 2016</h4><span class="price">48</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Lussac Saint-Emilion Bordeaux 2023</h4><span class="price">67</span><p>France.</p></div>
+        <div class="menu-item"><h4>Zenato Valpolicella Ripasso Superiore 2019</h4><span class="price">80</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Papa Figos Douro 2022</h4><span class="price">99</span><p>Portugal.</p></div>
+        <div class="menu-item"><h4>Wente Merlot 2021</h4><span class="price">129</span><p>California.</p></div>
+        <div class="menu-item"><h4>The Prisoner Zinfandel Blend 2019</h4><span class="price">139</span><p>California.</p></div>
+        <div class="menu-item"><h4>St. Francis Merlot 2019</h4><span class="price">149</span><p>California.</p></div>
+        <div class="menu-item"><h4>Zenato Amarone della Valpolicella 2019</h4><span class="price">149</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Tedeschi Amarone della Valpolicella 2019</h4><span class="price">170</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Caymus Cabernet Sauvignon 2020</h4><span class="price">290</span><p>California.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">White wine <span class="menu-subnote">bottle / 6oz glass / 9oz glass</span></h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>House Seasons Pinot Grigio 2024</h4><span class="price">48 / 14 / 19</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Cielo Pinot Grigio 2024</h4><span class="price">55 / 15 / 21</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Tawse Riesling 2021</h4><span class="price">55 / 15 / 21</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Kim Crawford Sauvignon Blanc 2024</h4><span class="price">70 / 19 / 24</span><p>New Zealand.</p></div>
+        <div class="menu-item"><h4>La Vieille Ferme Rose 2024</h4><span class="price">49</span><p>France.</p></div>
+        <div class="menu-item"><h4>Caposaldo Pinot Grigio 2023</h4><span class="price">52</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Escudo Rojo Sauvignon Blanc 2024</h4><span class="price">60</span><p>Chile.</p></div>
+        <div class="menu-item"><h4>Planalto Douro Pinot Grigo 2022</h4><span class="price">65</span><p>Portugal.</p></div>
+        <div class="menu-item"><h4>Guenoc Chardonnay 2023</h4><span class="price">65</span><p>California.</p></div>
+        <div class="menu-item"><h4>Tawse Chardonnay 2020</h4><span class="price">65</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>St. Francis Sauvignon Blanc 2022</h4><span class="price">99</span><p>California.</p></div>
+        <div class="menu-item"><h4>Cakebread Chardonnay 2021</h4><span class="price">195</span><p>California.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Bubbly <span class="menu-subnote">bottle / 6oz glass</span></h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Cielo Prosecco 2024</h4><span class="price">59 / 16</span><p>Italy.</p></div>
+        <div class="menu-item"><h4>Veuve du Vernay Brut 2024</h4><span class="price">55</span><p>France.</p></div>
+        <div class="menu-item"><h4>Veuve Clicquot Brut 2019</h4><span class="price">219</span><p>France.</p></div>
+        <div class="menu-item"><h4>Billecart-Salmon Extra Brut 2009</h4><span class="price">449</span><p>France.</p></div>
+        <div class="menu-item"><h4>Dom Perignon 2010</h4><span class="price">650</span><p>France.</p></div>
+        <div class="menu-item"><h4>Louis Roederer Cristal Brut 2012</h4><span class="price">1400</span><p>France.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Spirits</h3>
+      <div class="menu-columns reveal">
+        <div>
+          <h4 class="menu-minihead">Vodka</h4>
+          <ul class="menu-list">
+            <li><span>Tag</span><span>11</span></li>
+            <li><span>Smirnoff Blueberry</span><span>11</span></li>
+            <li><span>Smirnoff Raspberry</span><span>11</span></li>
+            <li><span>Smirnoff Vanilla</span><span>11</span></li>
+            <li><span>Stoli</span><span>11</span></li>
+            <li><span>Grey Goose</span><span>15</span></li>
+          </ul>
+          <h4 class="menu-minihead">Rum</h4>
+          <ul class="menu-list">
+            <li><span>Captain Morgan White</span><span>11</span></li>
+            <li><span>Malibu Coconut</span><span>11</span></li>
+            <li><span>Captain Morgan Spiced</span><span>12</span></li>
+            <li><span>Captain Morgan Dark</span><span>12</span></li>
+            <li><span>Appleton's Spiced</span><span>12</span></li>
+            <li><span>Gosling's Black</span><span>13</span></li>
+            <li><span>Kraken Black Spiced</span><span>13</span></li>
+          </ul>
+          <h4 class="menu-minihead">Bourbon &amp; Whiskey</h4>
+          <ul class="menu-list">
+            <li><span>Forty Creek</span><span>12</span></li>
+            <li><span>Jim Beam</span><span>12</span></li>
+            <li><span>Jack Daniel's</span><span>13</span></li>
+            <li><span>Jameson</span><span>14</span></li>
+            <li><span>Knob Creek 9yr</span><span>17</span></li>
+          </ul>
+          <h4 class="menu-minihead">Rye</h4>
+          <ul class="menu-list">
+            <li><span>Canadian Club</span><span>12</span></li>
+            <li><span>Wiser's Deluxe</span><span>12</span></li>
+            <li><span>Crown Royal</span><span>12</span></li>
+            <li><span>Lot 40</span><span>14</span></li>
+          </ul>
+          <h4 class="menu-minihead">Gin</h4>
+          <ul class="menu-list">
+            <li><span>Ginslinger</span><span>12</span></li>
+            <li><span>Bombay Sapphire</span><span>12</span></li>
+            <li><span>Dillon's</span><span>13</span></li>
+            <li><span>Empress</span><span>15</span></li>
+            <li><span>Hendricks</span><span>16</span></li>
+          </ul>
         </div>
-        <div class="menu-img-wrap reveal" data-delay="1">
-          <img src="images/plates/beef-tenderloin.jpg" alt="Dinner plate with wine at The Springs">
+        <div>
+          <h4 class="menu-minihead">Scotch</h4>
+          <ul class="menu-list">
+            <li><span>Grant's</span><span>13</span></li>
+            <li><span>Glenmorangie</span><span>17</span></li>
+            <li><span>Johnnie Walker Black Label</span><span>17</span></li>
+            <li><span>Glenlivet 12 / 15 / 18yr</span><span>19 / 24 / 43</span></li>
+            <li><span>Glenfiddich 12 / 18yr</span><span>19 / 43</span></li>
+            <li><span>Dalwhinnie 15yr</span><span>25</span></li>
+            <li><span>Macallan 12yr</span><span>27</span></li>
+            <li><span>Lagavulin 16yr</span><span>29</span></li>
+            <li><span>Oban 14yr</span><span>29</span></li>
+            <li><span>Johnnie Walker Blue Label</span><span>56</span></li>
+          </ul>
+          <h4 class="menu-minihead">Tequila</h4>
+          <ul class="menu-list">
+            <li><span>Sauza Silver</span><span>12</span></li>
+            <li><span>Jose Cuervo</span><span>13</span></li>
+            <li><span>Casamigos Blanco</span><span>18</span></li>
+            <li><span>Patron Silver</span><span>19</span></li>
+            <li><span>Don Julio Blanco</span><span>20</span></li>
+            <li><span>Don Julio 70</span><span>25</span></li>
+          </ul>
+          <h4 class="menu-minihead">Cognac</h4>
+          <ul class="menu-list">
+            <li><span>Courvoisier VSOP</span><span>17</span></li>
+            <li><span>Hennessy</span><span>17</span></li>
+            <li><span>Remy Martin XO</span><span>54</span></li>
+          </ul>
+          <h4 class="menu-minihead">Brandy</h4>
+          <ul class="menu-list">
+            <li><span>St. Remy VSOP</span><span>11</span></li>
+            <li><span>St. Remy XO</span><span>13</span></li>
+          </ul>
+          <h4 class="menu-minihead">Liqueurs</h4>
+          <ul class="menu-list">
+            <li><span>Limoncello</span><span>11</span></li>
+            <li><span>Sambuca</span><span>11</span></li>
+            <li><span>Bolivar</span><span>11</span></li>
+            <li><span>Frangelico</span><span>12</span></li>
+            <li><span>Disaronno</span><span>12</span></li>
+            <li><span>Bailey's</span><span>12</span></li>
+            <li><span>Drambuie</span><span>13</span></li>
+            <li><span>Grand Marnier</span><span>13</span></li>
+            <li><span>Cointreau</span><span>15</span></li>
+            <li><span>Chambord</span><span>15</span></li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div id="panel-dessert" role="tabpanel" aria-labelledby="tab-dessert" data-group="menu" class="menu-panel">
-      <div class="split" style="align-items: start;">
-        <div class="reveal">
-          <h3>Save room.</h3>
-          <p>Chocolate mousse. Crème brûlée. Seasonal fruit. A tiramisu that leaves. Pair with a coffee or a dessert wine.</p>
-          <p>Dessert is a real course here, not an afterthought. We press the dough, we torch the sugar, we mean it.</p>
-        </div>
-        <div class="menu-img-wrap reveal" data-delay="1">
-          <img src="images/plates/chocolate-mousse.jpg" alt="Chocolate mousse dessert at The Springs">
-        </div>
+      <div class="menu-section-head reveal">
+        <h2>Dessert &amp; Digestifs</h2>
+        <p>Dessert is a real course here. Pair with a coffee, a digestif, or a dessert wine.</p>
       </div>
 
-      <div class="card-grid mt-lg">
-        <div class="card reveal"><div class="card-media" style="background-image: url('images/plates/chocolate-mousse.jpg');"></div><div class="card-body"><h3>Chocolate mousse</h3><p>Layered chocolate, whipped cream, seasonal berries, physalis.</p></div></div>
-        <div class="card reveal" data-delay="1"><div class="card-media" style="background-image: url('images/plates/creme-brulee.jpg');"></div><div class="card-body"><h3>Crème brûlée</h3><p>Classic vanilla custard, torched sugar, served with a tiramisu slice if you ask nicely.</p></div></div>
-        <div class="card reveal" data-delay="2"><div class="card-media" style="background-image: url('images/platters/seasonal-fruit.jpg');"></div><div class="card-body"><h3>Seasonal fruit</h3><p>Whatever is ripe and local this week.</p></div></div>
+      <h3 class="menu-subhead reveal">Dessert</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>Flourless chocolate cake</h4><span class="price">15</span><p>Served with fresh fruit and whipped cream.</p></div>
+        <div class="menu-item"><h4>Vanilla crème brûlée</h4><span class="price">16</span></div>
+        <div class="menu-item"><h4>Seasonal dessert</h4><span class="price">14</span><p>Served with fresh fruit and whipped cream.</p></div>
+        <div class="menu-item"><h4>Lemon sorbet</h4><span class="price">14</span><p>Served with lemon curd, shortbread crumble, poppyseeds.</p></div>
+        <div class="menu-item"><h4>Affogato</h4><span class="price">14</span><p>Vanilla ice cream, espresso.</p></div>
+        <div class="menu-item"><h4>Turtle's chocolate cheesecake</h4><span class="price">15</span><p>Served with fresh fruit and whipped cream.</p></div>
       </div>
+
+      <h3 class="menu-subhead reveal">Digestifs</h3>
+      <div class="menu-items reveal">
+        <div class="menu-item"><h4>B-52 coffee</h4><span class="price">19</span><p>Bailey's, coffee liqueur, grand marnier, whipped cream, amarena cherry, sugar rim.</p></div>
+        <div class="menu-item"><h4>Irish coffee</h4><span class="price">18</span><p>Jameson, Irish mist, whipped cream, amarena cherry, sugar rim.</p></div>
+        <div class="menu-item"><h4>Spanish coffee</h4><span class="price">19</span><p>Rum, grand marnier, coffee liqueur, whipped cream, amarena cherry, sugar rim.</p></div>
+        <div class="menu-item"><h4>Monte Cristo coffee</h4><span class="price">19</span><p>Grand marnier, coffee liqueur, whipped cream, amarena cherry, sugar rim.</p></div>
+        <div class="menu-item"><h4>Blueberry tea</h4><span class="price">17</span><p>Grand marnier, amaretto, orange pekoe tea, orange.</p></div>
+        <div class="menu-item"><h4>Espresso martini</h4><span class="price">21</span><p>Vanilla vodka, coffee liqueur, espresso.</p></div>
+        <div class="menu-item"><h4>Pick me up</h4><span class="price">17</span><p>Bailey's, amaretto.</p></div>
+        <div class="menu-item"><h4>White Russian</h4><span class="price">17</span><p>Vodka, coffee liqueur, milk, amarena cherry.</p></div>
+        <div class="menu-item"><h4>Vidal Select Harvest Ice Wine</h4><span class="price">15 · 3oz</span><p>Niagara.</p></div>
+        <div class="menu-item"><h4>Taylor Fladgate Tawny Port 20yr</h4><span class="price">25 · 2oz</span><p>Portugal.</p></div>
+      </div>
+
+      <h3 class="menu-subhead reveal">Coffee &amp; Tea</h3>
+      <div class="menu-columns reveal">
+        <div>
+          <h4 class="menu-minihead">Coffee</h4>
+          <ul class="menu-list">
+            <li><span>Cappuccino</span><span>9</span></li>
+            <li><span>Latte</span><span>9</span></li>
+            <li><span>Espresso</span><span>7</span></li>
+            <li><span>Double espresso</span><span>10</span></li>
+            <li><span>Americano</span><span>8</span></li>
+            <li><span>Drip coffee</span><span>6</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="menu-minihead">Tea <span class="menu-subnote">5</span></h4>
+          <ul class="menu-list menu-list-plain">
+            <li><em>Caffeinated</em></li>
+            <li>Orange pekoe</li>
+            <li>Earl grey</li>
+            <li>Green</li>
+          </ul>
+          <ul class="menu-list menu-list-plain">
+            <li><em>Herbal</em></li>
+            <li>Lemon ginger</li>
+            <li>Chamomile</li>
+            <li>Peppermint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-cta reveal mt-xl">
+      <p>Hungry? <a class="btn btn-primary" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Reserve a Table</a> <a class="btn btn-outline" href="tel:15196571100" style="margin-left: 8px;">Call (519) 657-1100</a></p>
     </div>
 
   </div>

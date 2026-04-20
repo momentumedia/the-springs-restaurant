@@ -15,7 +15,7 @@ Primary users: guests looking to reserve, couples planning weddings, corporate e
 The whole project is organized around not inventing content. Hard constraints, not preferences.
 
 - **No invented menu items, prices, chef names, founding year, or "three days for a croissant" style details.** Use only facts from this file, visible in `images/`, or supplied by the user.
-- **No stock photography.** Every photo under `images/` is real. Never add a placeholder or stock image.
+- **Stock photography is limited to hero background imagery only** (stored under `images/hero/`). Content photos (dishes, venue, events, platters, owners) must be real photos supplied by the user. Never add a placeholder or stock image outside `images/hero/`.
 - If a fact isn't verified, either cut it or (on `audit.html` only) prefix with "Estimated" or "Typical".
 
 ## Rule 1 · Writing rules
