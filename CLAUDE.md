@@ -69,8 +69,8 @@ These apply to every HTML, every CSS comment, every alt text, every commit messa
   - Supporting: `set-menus`, `private-dining`, `gallery`, `about`, `contact`
   - Restaurant: `menu`
   - Internal: `audit` (noindex)
-- **Primary CTA site-wide:** Square appointments URL (Rule 2). Labeled contextually. "Book your event" on event pages, "Reserve a table" on menu/restaurant pages, "Book now" on the homepage.
-- **Secondary (parallel) event-inquiry flow:** HTML forms with `data-mailto` for guests who prefer a conversation before booking. Placeholder inbox addresses, see TODOs.
+- **Only CTA site-wide:** Square appointments URL (Rule 2). Labeled contextually. "Book your event" on event pages, "Reserve a table" on menu/restaurant pages, "Book now" on the homepage.
+- **No forms, no mailto.** Owner directive (2026-04-23): every inquiry path routes to Square or to the phone number `(519) 657-1100`. Do not reintroduce HTML forms or `mailto:` links without asking.
 - **SEO infrastructure** (new as of the events-first rebuild): canonical links, Open Graph + Twitter cards, favicons, `robots.txt`, `sitemap.xml`, schema.org markup on every page (`EventVenue`, `LocalBusiness`, `Restaurant`, `Service`, `FAQPage`, `BreadcrumbList` where appropriate).
 
 ## Tech stack
@@ -190,10 +190,7 @@ Do not add a testing framework. If a check is important enough to automate, ask 
 
 ## Forms & data
 
-- Forms use `data-mailto="address@..."` and `data-subject="..."`. `js/main.js` URL-encodes values and opens `mailto:`.
-- **Current placeholder inboxes (TODO: replace with real addresses):**
-  - `events@thespringsrestaurant.com` — events + private dining
-  - `hello@thespringsrestaurant.com` — general contact
+- **There are no forms on the site.** Per owner (2026-04-23), every inquiry routes to Square or phone. The mailto handler still exists in `js/main.js` as defensive code in case a form is ever re-added, but no page currently uses it.
 - No backend, no database, no cookies, no analytics. Don't add any without asking.
 
 ## Security / privacy
@@ -246,7 +243,7 @@ Do not add a testing framework. If a check is important enough to automate, ask 
 ## TODOs (waiting on the user)
 
 - [x] ~~Real a-la-carte menu text (lunch, dinner, wine, dessert) to replace placeholders in `menu.html`.~~ · transcribed April 2026 from user-supplied Menu 1-6 screenshots.
-- [ ] Real inquiry email addresses to replace `events@` / `hello@` placeholders in forms.
+- [x] ~~Real inquiry email addresses to replace `events@` / `hello@` placeholders in forms.~~ · Forms and mailto links removed entirely per owner direction on 2026-04-23. Square is the only inquiry path.
 - [ ] Owner names if they want attribution on `about.html`.
 - [ ] Any awards, press, or reviews to quote.
 - [ ] Decide if a `staging` branch or PR-preview flow is wanted before further changes to `main`.
