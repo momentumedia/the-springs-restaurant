@@ -91,4 +91,36 @@
       a.setAttribute('aria-current', 'page');
     }
   });
+
+  // Touch-friendly dropdown · first tap opens, second tap follows the link
+  document.querySelectorAll('.nav-links > li.has-sub > a').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const hoverCapable = window.matchMedia('(hover: hover)').matches;
+      if (hoverCapable || document.body.classList.contains('nav-open')) return;
+      const submenu = a.parentElement.querySelector('.submenu');
+      if (!submenu) return;
+      if (!submenu.classList.contains('touch-open')) {
+        e.preventDefault();
+        document.querySelectorAll('.submenu.touch-open').forEach((s) => {
+          if (s !== submenu) s.classList.remove('touch-open');
+        });
+        submenu.classList.add('touch-open');
+      }
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.has-sub')) {
+      document.querySelectorAll('.submenu.touch-open').forEach((s) => s.classList.remove('touch-open'));
+    }
+  });
+
+  // Mobile overlay nav · update aria-label when toggling open/close
+  if (toggle) {
+    const updateToggleLabel = () => {
+      const open = document.body.classList.contains('nav-open');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', updateToggleLabel);
+    updateToggleLabel();
+  }
 })();

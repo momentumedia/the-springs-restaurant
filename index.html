@@ -3,11 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Springs Restaurant · Casual fine-dining on Springbank, London ON</title>
-<meta name="description" content="Casual fine-dining bistro in a restored historic church at 310 Springbank Dr, London Ontario. Farm-to-table plates, private events, and set menus for gatherings of up to 120.">
-<meta property="og:title" content="The Springs Restaurant">
-<meta property="og:description" content="Farm-to-table, served in a restored church on Springbank.">
-<meta property="og:image" content="images/plates/surf-and-turf.jpg">
+<title>Event Venue in London Ontario · Any Hour, No Fee · The Springs</title>
+<meta name="description" content="Event venue in a restored historic church on Springbank in London, Ontario. Weddings, showers, birthdays, corporate, celebrations of life. Any hour. No venue fee. No deposit. No minimum spend. No restrictions.">
+<link rel="canonical" href="https://momentumedia.github.io/the-springs-restaurant/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://momentumedia.github.io/the-springs-restaurant/">
+<meta property="og:title" content="The Springs · Event venue in London, Ontario">
+<meta property="og:description" content="Any event. Any hour. No venue fee. No deposit. No minimum. In a restored historic church on Springbank.">
+<meta property="og:image" content="https://momentumedia.github.io/the-springs-restaurant/images/venue/main-venue-1.jpg">
+<meta property="og:image:alt" content="The Springs main venue set for an event with a long table and purple florals under arched church windows.">
+<meta property="og:site_name" content="The Springs Restaurant">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Springs · Event venue in London, Ontario">
+<meta name="twitter:description" content="Any event. Any hour. No venue fee. No deposit. No minimum. In a restored historic church on Springbank.">
+<meta name="twitter:image" content="https://momentumedia.github.io/the-springs-restaurant/images/venue/main-venue-1.jpg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,29 +25,67 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "The Springs Restaurant",
-  "image": "images/plates/surf-and-turf.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "310 Springbank Dr",
-    "addressLocality": "London",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "telephone": "+1-519-657-1100",
-  "servesCuisine": "Farm-to-table bistro",
-  "priceRange": "$$$",
-  "acceptsReservations": "True",
-  "url": "https://www.thespringsrestaurant.com/",
-  "sameAs": [
-    "https://www.instagram.com/thespringsrestaurant",
-    "https://www.facebook.com/profile.php?id=100086305566439"
-  ],
-  "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Saturday"],"opens":"16:30","closes":"23:00"},
-    {"@type": "OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"12:00","closes":"15:00"},
-    {"@type": "OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"15:00","closes":"23:00"}
+  "@graph": [
+    {
+      "@type": ["EventVenue", "LocalBusiness"],
+      "@id": "https://momentumedia.github.io/the-springs-restaurant/#venue",
+      "name": "The Springs Restaurant",
+      "alternateName": "The Springs Event Venue",
+      "description": "Event venue in a restored historic church at 310 Springbank Drive, London, Ontario. Weddings, bridal showers, birthdays, corporate and pharmaceutical events, celebrations of life, graduations, retirements, and every milestone in between. Open any hour. No venue fee. No deposit. No minimum spend.",
+      "image": "https://momentumedia.github.io/the-springs-restaurant/images/venue/main-venue-1.jpg",
+      "logo": "https://momentumedia.github.io/the-springs-restaurant/images/logo/springs-logo.webp",
+      "url": "https://momentumedia.github.io/the-springs-restaurant/",
+      "telephone": "+1-519-657-1100",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "310 Springbank Dr",
+        "addressLocality": "London",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "maximumAttendeeCapacity": 120,
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "No venue fee", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "No deposit required", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "No minimum spend", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Open any hour", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Wheelchair accessible", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Complimentary on-site parking", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Outdoor tent", "value": true}
+      ],
+      "sameAs": [
+        "https://instagram.com/thespringsrestaurant",
+        "https://www.facebook.com/profile.php?id=100086305566439"
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "London, Ontario"},
+        {"@type": "AdministrativeArea", "name": "Middlesex County"}
+      ]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://momentumedia.github.io/the-springs-restaurant/#restaurant",
+      "name": "The Springs Restaurant",
+      "image": "https://momentumedia.github.io/the-springs-restaurant/images/plates/surf-and-turf.jpg",
+      "url": "https://momentumedia.github.io/the-springs-restaurant/menu.html",
+      "servesCuisine": "Farm-to-table bistro",
+      "priceRange": "$$$",
+      "acceptsReservations": "True",
+      "telephone": "+1-519-657-1100",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "310 Springbank Dr",
+        "addressLocality": "London",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Saturday"],"opens":"16:30","closes":"23:00"},
+        {"@type": "OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"12:00","closes":"15:00"},
+        {"@type": "OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"15:00","closes":"23:00"}
+      ]
+    }
   ]
 }
 </script>
@@ -47,20 +95,31 @@
 <header class="site-header">
   <div class="wrap">
     <nav class="nav" aria-label="Primary">
-      <a href="index.html" class="nav-brand" aria-label="The Springs Restaurant">
-        <img src="images/logo/springs-logo.webp" alt="The Springs Restaurant">
+      <a href="index.html" class="nav-brand" aria-label="The Springs · home">
+        <img src="images/logo/springs-logo.webp" alt="The Springs" width="140" height="40">
       </a>
       <ul class="nav-links">
+        <li class="has-sub">
+          <a href="events.html">Events <span class="chev" aria-hidden="true">▾</span></a>
+          <ul class="submenu" role="menu">
+            <li><a href="events.html">All events</a></li>
+            <li><div class="submenu-divider"></div></li>
+            <li><a href="weddings.html">Weddings · Showers</a></li>
+            <li><a href="corporate-events.html">Corporate · Pharmaceutical</a></li>
+            <li><a href="celebration-of-life.html">Celebrations of life</a></li>
+            <li><a href="milestones.html">Milestones · Birthdays</a></li>
+            <li><a href="other-events.html">Other events</a></li>
+            <li><div class="submenu-divider"></div></li>
+            <li><a href="set-menus.html">Set menus</a></li>
+            <li><a href="private-dining.html">Private dining</a></li>
+          </ul>
+        </li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="set-menus.html">Set Menus</a></li>
-        <li><a href="private-dining.html">Private Dining</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="audit.html">Audit</a></li>
       </ul>
-      <a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" class="nav-cta" target="_blank" rel="noopener">Reserve</a>
+      <a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" class="nav-cta" target="_blank" rel="noopener">Book</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </nav>
   </div>
@@ -72,72 +131,149 @@
   <div class="hero-media" style="background-image: url('images/hero/hero-plated.jpg');"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow reveal">London, Ontario</span>
-      <h1 class="reveal" data-delay="1">Farm to table, served in a restored church on Springbank.</h1>
-      <p class="hero-sub reveal" data-delay="2">A casual fine-dining bistro. Local sourcing. Fresh plates. A room built for both quiet dinners and loud celebrations.</p>
+      <span class="eyebrow reveal">Event venue · London, Ontario</span>
+      <h1 class="reveal" data-delay="1">Any event. Any hour. In a restored historic church.</h1>
+      <p class="hero-sub reveal" data-delay="2">Weddings, showers, birthdays, corporate, celebrations of life. Mornings, nights, holidays, middle of the night. No venue fee. No deposit. No minimum spend. No restrictions.</p>
       <div class="hero-ctas reveal" data-delay="3">
-        <a class="btn btn-brass" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book a Table</a>
-        <a class="btn btn-ghost" href="menu.html">View the Menu</a>
+        <a class="btn btn-brass" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book your event</a>
+        <a class="btn btn-ghost" href="events.html">Explore events</a>
       </div>
+      <ul class="hero-pills reveal" data-delay="3" aria-label="What makes us flexible">
+        <li class="hero-pill">Any hour</li>
+        <li class="hero-pill">No venue fee</li>
+        <li class="hero-pill">No deposit</li>
+        <li class="hero-pill">No minimum</li>
+        <li class="hero-pill">No restrictions</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <section class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Lunch <em class="dot">·</em> Dinner <em class="dot">·</em> Wine List <em class="dot">·</em> Desserts <em class="dot">·</em> Set Menus <em class="dot">·</em> Weddings <em class="dot">·</em> Private Events <em class="dot">·</em> Farm to Table <em class="dot">·</em></span>
-    <span>Lunch <em class="dot">·</em> Dinner <em class="dot">·</em> Wine List <em class="dot">·</em> Desserts <em class="dot">·</em> Set Menus <em class="dot">·</em> Weddings <em class="dot">·</em> Private Events <em class="dot">·</em> Farm to Table <em class="dot">·</em></span>
+    <span>Weddings <em class="dot">·</em> Bridal showers <em class="dot">·</em> Birthdays <em class="dot">·</em> Corporate <em class="dot">·</em> Celebrations of life <em class="dot">·</em> Engagements <em class="dot">·</em> Retirements <em class="dot">·</em> Graduations <em class="dot">·</em></span>
+    <span>Weddings <em class="dot">·</em> Bridal showers <em class="dot">·</em> Birthdays <em class="dot">·</em> Corporate <em class="dot">·</em> Celebrations of life <em class="dot">·</em> Engagements <em class="dot">·</em> Retirements <em class="dot">·</em> Graduations <em class="dot">·</em></span>
+  </div>
+</section>
+
+<section class="usp-band">
+  <div class="wrap">
+    <div class="usp-heading reveal">
+      <span class="eyebrow">Why The Springs</span>
+      <h2>Booking an event should not feel like a negotiation.</h2>
+      <p>We don't charge a venue fee. We don't require a deposit. We don't hold you to a minimum spend. We don't restrict what kind of event you can throw. And we'll open the doors at any hour, any day, including holidays.</p>
+    </div>
+    <ul class="usp-grid">
+      <li class="reveal">
+        <span class="usp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3>Any hour</h3>
+        <p>Morning showers. Late-night receptions. Holidays. Pick a time that works for you and we'll be open.</p>
+      </li>
+      <li class="reveal" data-delay="1">
+        <span class="usp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></span>
+        <h3>No venue fee</h3>
+        <p>Zero rental cost. The room is yours for the price of food and drink, nothing more.</p>
+      </li>
+      <li class="reveal" data-delay="2">
+        <span class="usp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0"/></svg></span>
+        <h3>No deposit</h3>
+        <p>We don't ask for money up front to hold your date. Just confirm and we're on the calendar.</p>
+      </li>
+      <li class="reveal" data-delay="3">
+        <span class="usp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+        <h3>No minimum spend</h3>
+        <p>Pay for exactly what you plan. A small room for eight or a wedding for eighty, the number lands where it lands.</p>
+      </li>
+      <li class="reveal" data-delay="3">
+        <span class="usp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/><path d="M7.5 7.5l9 9M16.5 7.5l-9 9"/></svg></span>
+        <h3>No restrictions</h3>
+        <p>Any type of event. Bring your own decor, your own music, your own format. We don't hand you a rule book.</p>
+      </li>
+    </ul>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="split">
-      <div class="split-media reveal">
-        <img src="images/plates/beef-tenderloin.jpg" alt="Seared beef tenderloin with charred corn and seasonal vegetables">
-      </div>
-      <div class="reveal" data-delay="1">
-        <span class="eyebrow">The building</span>
-        <h2>A century-old church, set for dinner.</h2>
-        <p class="lede">The bones of a church. Arched windows, exposed brick, pitched ceilings, wooden floors. We restored it carefully and turned it into a dining room.</p>
-        <p>We cook with what's in season and what grows close to home. The menu reads plainly because the sourcing speaks for itself. Come for a weeknight dinner, book the room for a wedding, or set a long table for the people you love.</p>
-        <a class="btn btn-outline mt-sm" href="about.html">Our story</a>
-      </div>
+    <div class="text-center reveal" style="max-width: 760px; margin: 0 auto 56px;">
+      <span class="eyebrow">What we host</span>
+      <h2>Every occasion, under one church roof.</h2>
+      <p class="lede" style="margin: 0 auto;">Four broad categories, every subset in each. Pick the one that sounds closest to your day, or skip straight to <a href="events.html" style="color: var(--forest); border-bottom: 1px solid var(--brass);">all events</a>.</p>
+    </div>
+    <div class="event-types">
+      <a class="event-type-card reveal" href="weddings.html">
+        <div class="etc-media" style="background-image: url('images/events/wedding-ceremony.jpg');"></div>
+        <div class="etc-body">
+          <span class="etc-eyebrow">Ceremony &amp; reception</span>
+          <h3>Weddings &amp; showers</h3>
+          <p>Ceremony, reception, bridal shower, wedding shower. One building, one kitchen, one day.</p>
+          <ul class="etc-list"><li>Weddings</li><li>Bridal showers</li><li>Wedding showers</li></ul>
+          <span class="etc-link">See weddings</span>
+        </div>
+      </a>
+      <a class="event-type-card reveal" data-delay="1" href="corporate-events.html">
+        <div class="etc-media" style="background-image: url('images/events/corporate-presentation.jpg');"></div>
+        <div class="etc-body">
+          <span class="etc-eyebrow">Corporate</span>
+          <h3>Corporate &amp; pharmaceutical</h3>
+          <p>Team lunches, client hosting, pharma education dinners, board meetings. AV ready. Quiet room.</p>
+          <ul class="etc-list"><li>Corporate</li><li>Pharmaceutical</li><li>Off-sites</li></ul>
+          <span class="etc-link">See corporate</span>
+        </div>
+      </a>
+      <a class="event-type-card reveal" data-delay="2" href="milestones.html">
+        <div class="etc-media" style="background-image: url('images/stock/milestones/birthday-table.jpg');"></div>
+        <div class="etc-body">
+          <span class="etc-eyebrow">Milestones</span>
+          <h3>Birthdays &amp; milestones</h3>
+          <p>Birthdays of every age. Engagements, proposals, bachelor parties, graduations, retirements, communions, baptisms.</p>
+          <ul class="etc-list"><li>Birthdays</li><li>Engagements</li><li>Graduations</li><li>Retirements</li></ul>
+          <span class="etc-link">See milestones</span>
+        </div>
+      </a>
+      <a class="event-type-card reveal" data-delay="3" href="celebration-of-life.html">
+        <div class="etc-media" style="background-image: url('images/venue/main-venue-3.jpg');"></div>
+        <div class="etc-body">
+          <span class="etc-eyebrow">Celebrations of life</span>
+          <h3>A quiet place to gather.</h3>
+          <p>We've hosted many. Hors-d'oeuvre or seated. AV for a slideshow. Extended hours for families who need the space.</p>
+          <ul class="etc-list"><li>Memorial receptions</li><li>AV available</li><li>Any room size</li></ul>
+          <span class="etc-link">Learn more</span>
+        </div>
+      </a>
+      <a class="event-type-card reveal" data-delay="3" href="other-events.html">
+        <div class="etc-media" style="background-image: url('images/venue/main-venue-1.jpg');"></div>
+        <div class="etc-body">
+          <span class="etc-eyebrow">Everything else</span>
+          <h3>Other events</h3>
+          <p>Anniversaries, reunions, fundraisers, holiday parties, book launches, quinceañeras. If you can name it, we can host it.</p>
+          <ul class="etc-list"><li>Anniversaries</li><li>Reunions</li><li>Fundraisers</li><li>Everything else</li></ul>
+          <span class="etc-link">See more</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="section" style="background: var(--ivory-warm);">
   <div class="wrap">
-    <div class="text-center reveal" style="max-width: 720px; margin: 0 auto 56px;">
-      <span class="eyebrow">Three ways to dine with us</span>
-      <h2>Dinner tonight. A wedding in June. A long lunch on Thursday.</h2>
-    </div>
-    <div class="card-grid">
-      <article class="card reveal">
-        <div class="card-media" style="background-image: url('images/plates/appetizer-trio.jpg');"></div>
-        <div class="card-body">
-          <h3>The menu</h3>
-          <p>Lunch, dinner, wine, and dessert. The a-la-carte side of the room.</p>
-          <a class="card-link" href="menu.html">See what's on</a>
-        </div>
-      </article>
-      <article class="card reveal" data-delay="1">
-        <div class="card-media" style="background-image: url('images/events/wedding-ceremony.jpg');"></div>
-        <div class="card-body">
-          <h3>Events</h3>
-          <p>Weddings, corporate, bridal showers, celebrations of life. Up to 85 inside. More under the tent.</p>
-          <a class="card-link" href="events.html">Host with us</a>
-        </div>
-      </article>
-      <article class="card reveal" data-delay="2">
-        <div class="card-media" style="background-image: url('images/venue/private-room-1.jpg');"></div>
-        <div class="card-body">
-          <h3>Private dining</h3>
-          <p>A dedicated room for up to 35. Custom menus. Dedicated service.</p>
-          <a class="card-link" href="private-dining.html">See the room</a>
-        </div>
-      </article>
+    <div class="split">
+      <div class="split-media reveal">
+        <img src="images/venue/main-venue-2.jpg" alt="Interior of The Springs event venue: exposed brick, pitched wood ceilings, arched church windows.">
+      </div>
+      <div class="reveal" data-delay="1">
+        <span class="eyebrow">The building</span>
+        <h2>A century-old church, restored and set for your day.</h2>
+        <p class="lede">Arched windows, exposed brick, pitched wood ceilings, soft light through stained glass. We restored the bones carefully, then turned it into the kind of room people remember.</p>
+        <p>Main hall seats 85. Private room for 35. An outdoor tent for receptions that outgrow the building. The kitchen runs farm-to-table and the service team has done every kind of day under these ceilings.</p>
+        <ul class="spec-grid" aria-label="Venue specs">
+          <li><span class="label">Main hall</span><span class="value">Up to 85</span><span class="value-sub">seated dinner</span></li>
+          <li><span class="label">Private room</span><span class="value">Up to 35</span><span class="value-sub">long table</span></li>
+          <li><span class="label">Outdoor tent</span><span class="value">Overflow</span><span class="value-sub">beyond 85</span></li>
+          <li><span class="label">Accessibility</span><span class="value">Ground level</span><span class="value-sub">wheelchair accessible</span></li>
+        </ul>
+        <a class="btn btn-outline mt-sm" href="about.html">Our story</a>
+      </div>
     </div>
   </div>
 </section>
@@ -146,13 +282,21 @@
   <div class="wrap">
     <div class="split split-flip">
       <div class="split-media reveal">
-        <img src="images/plates/lamb-shank.jpg" alt="Braised lamb shank with red wine jus, cauliflower and roasted vegetables">
+        <img src="images/plates/lamb-shank.jpg" alt="Braised lamb shank with red wine jus, roasted cauliflower and seasonal vegetables on a white plate.">
       </div>
       <div class="reveal" data-delay="1">
         <span class="eyebrow">Set menus</span>
-        <h2>Seven packages, every price tier, made for groups.</h2>
-        <p>Lunch from $65 per person. Dinner from $79. Hors-d'oeuvre selections for the room that stays on its feet. All tiers include real options, not filler.</p>
-        <a class="btn btn-outline mt-sm" href="set-menus.html">Browse set menus</a>
+        <h2>Published prices. No hidden math.</h2>
+        <p>Seven set menus, every tier visible. Lunch from $65 per person. Dinner from $79. Two hors-d'oeuvre tiers for receptions that stay on their feet. Every price on the website, no quote required before you know what you want.</p>
+        <ul style="padding-left: 18px; color: var(--charcoal-soft); margin-bottom: 24px;">
+          <li>Lunch Deluxe · $65 per person</li>
+          <li>Lunch Premium · $75 per person</li>
+          <li>Dinner Deluxe · $79 per person</li>
+          <li>Dinner Deluxe Plus · $99 per person</li>
+          <li>Dinner Premium · $115 per person</li>
+          <li>Two hors-d'oeuvre tiers</li>
+        </ul>
+        <a class="btn btn-primary mt-sm" href="set-menus.html">See every set menu</a>
       </div>
     </div>
   </div>
@@ -163,40 +307,60 @@
     <div class="reveal">
       <span class="eyebrow">Visit</span>
       <h3>310 Springbank Drive, London ON</h3>
-      <p>Complimentary parking on site. Wheelchair accessible. Call or text to ask about tonight's specials.</p>
+      <p>Complimentary parking on site. Wheelchair accessible. Call or text to ask about your date.</p>
       <p><a href="https://maps.google.com/?q=310+Springbank+Dr+London+ON" target="_blank" rel="noopener">Get directions</a> <span style="opacity:0.5;"> · </span> <a href="tel:15196571100">(519) 657-1100</a></p>
     </div>
     <div class="reveal" data-delay="1">
-      <span class="eyebrow">Hours</span>
+      <span class="eyebrow">Restaurant hours</span>
       <dl>
         <dt>Sun to Wed</dt><dd>4:30pm to close</dd>
         <dt>Thu to Fri</dt><dd>12pm to 3pm · lunch</dd>
         <dt>Thu to Fri</dt><dd>3pm to close · dinner</dd>
         <dt>Sat</dt><dd>4:30pm to close</dd>
       </dl>
-      <p style="margin-top: 16px;">Extended hours for private events and large functions.</p>
+      <p style="margin-top: 16px; font-size: 0.88rem; color: rgba(248,244,236,0.78);">Events run any hour, independent of dining-room hours.</p>
     </div>
     <div class="reveal" data-delay="2">
-      <span class="eyebrow">Reserve</span>
-      <p>Hold a table with Square. It takes a minute.</p>
-      <a class="btn btn-brass" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book a Table</a>
+      <span class="eyebrow">Book</span>
+      <p>Events and tables both go through Square. It takes about a minute.</p>
+      <a class="btn btn-brass" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book now</a>
     </div>
   </div>
 </section>
 
-<section class="section-tight">
+<section class="section">
   <div class="wrap">
-    <div class="text-center reveal" style="margin-bottom: 32px;">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Still a restaurant</span>
+        <h2>Dinner tonight, if that's what you came for.</h2>
+        <p class="lede">The a-la-carte dining room is open most nights of the week. Farm-to-table plates, a short wine list, a full bar. The full menu is on the website.</p>
+        <p>If you're planning an event, the whole site is for you. If you just want a table for two on Thursday, the Menu page is probably what you want.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
+          <a class="btn btn-primary" href="menu.html">See the menu</a>
+          <a class="btn btn-outline" href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Reserve a table</a>
+        </div>
+      </div>
+      <div class="split-media reveal" data-delay="1">
+        <img src="images/plates/beef-tenderloin.jpg" alt="Seared beef tenderloin with charred corn and seasonal vegetables, on a black plate.">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="background: var(--ivory-warm);">
+  <div class="wrap">
+    <div class="text-center reveal" style="margin-bottom: 24px;">
       <span class="eyebrow">On Instagram</span>
       <h3>@thespringsrestaurant</h3>
     </div>
     <div class="ig-strip reveal" data-delay="1">
-      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/surf-and-turf.jpg');" aria-label="Surf and turf plate"></a>
-      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/lamb-shank.jpg');" aria-label="Lamb shank plate"></a>
-      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/appetizer-trio.jpg');" aria-label="Appetizer trio"></a>
-      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/chocolate-mousse.jpg');" aria-label="Chocolate mousse dessert"></a>
+      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/events/wedding-ceremony.jpg');" aria-label="Wedding ceremony at The Springs"></a>
+      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/events/decorated-white.jpg');" aria-label="Bridal shower setup with white florals"></a>
+      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/platters/charcuterie.jpg');" aria-label="Charcuterie platter"></a>
+      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/lamb-shank.jpg');" aria-label="Braised lamb shank plate"></a>
+      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/venue/outdoor-tent.jpg');" aria-label="Outdoor tent with string lights"></a>
       <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/creme-brulee.jpg');" aria-label="Creme brulee dessert"></a>
-      <a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener" style="background-image: url('images/plates/beef-tenderloin.jpg');" aria-label="Beef tenderloin plate"></a>
     </div>
   </div>
 </section>
@@ -207,8 +371,20 @@
   <div class="wrap">
     <div class="brand-block">
       <h4>The Springs</h4>
-      <p>Casual fine-dining bistro in a restored historic church. Farm-to-table plates, private events, and set menus for gatherings of every size.</p>
-      <p><a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book a reservation →</a></p>
+      <p>Event venue in a restored historic church on Springbank, London Ontario. Any event, any hour. No venue fee. No deposit. No minimum. Farm-to-table restaurant open most nights.</p>
+      <p><a href="https://book.squareup.com/appointments/us98yrta83eva6/location/0G40BYAWMQCB0/services?buttonTextColor=ffffff&amp;color=5ea581&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book an event or table →</a></p>
+    </div>
+    <div>
+      <h4>Events</h4>
+      <ul>
+        <li><a href="weddings.html">Weddings &amp; Showers</a></li>
+        <li><a href="corporate-events.html">Corporate &amp; Pharma</a></li>
+        <li><a href="celebration-of-life.html">Celebrations of life</a></li>
+        <li><a href="milestones.html">Milestones &amp; Birthdays</a></li>
+        <li><a href="other-events.html">Other events</a></li>
+        <li><a href="set-menus.html">Set menus</a></li>
+        <li><a href="private-dining.html">Private dining</a></li>
+      </ul>
     </div>
     <div>
       <h4>Visit</h4>
@@ -216,15 +392,7 @@
         <li>310 Springbank Dr</li>
         <li>London, ON</li>
         <li><a href="tel:15196571100">(519) 657-1100</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Hours</h4>
-      <ul>
-        <li>Sun to Wed · 4:30pm to close</li>
-        <li>Thu to Fri · Lunch 12pm to 3pm</li>
-        <li>Thu to Fri · Dinner 3pm to close</li>
-        <li>Sat · 4:30pm to close</li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -232,6 +400,9 @@
       <ul>
         <li><a href="https://instagram.com/thespringsrestaurant" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100086305566439" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="menu.html">Restaurant menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="audit.html">Site audit</a></li>
       </ul>
     </div>
